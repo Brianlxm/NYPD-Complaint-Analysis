@@ -38,3 +38,44 @@ NYPD-Complaint-Analysis/
 ├── requirements.txt        # List of Python dependencies
 ├── README.md               # Project documentation
 └── .gitignore              # Files and folders to ignore in version control
+```
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/brianlxm/NYPD-Complaint-Analysis.git
+   cd NYPD-Complaint-Analysis
+   ```
+
+2. **Set up the Python Environment**
+Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up the Database**
+
+    - If using SQL Server locally, execute database/schema.sql to create tables.
+    - Load data by running database/data_import.sql.
+    - Alternatively, use .bak files if provided to restore the database.
+
+### Setup
+ - ETL Pipeline: Configure the pipeline in pipeline.yaml with paths and settings.
+ - Jupyter Notebook: Run notebooks/ to explore and analyze the data.
+
+### Usage
+ - Run ETL: Execute the scripts in the scripts/ folder to load and transform data.
+ - Analyze Data: Use Jupyter notebooks for exploring relationships and insights, such as:
+    - Patterns in complaints by age, ethnicity, and background of officers.
+    - Correlations between complaints and penalties or outcomes.
+
+### Future Enhancements
+Incorporate dashboards for visualizations.
+Add machine learning models for predictive analysis.
+
+### Contributors
+ - Brian Lam: Initial setup and ETL pipeline.
+ - [Collaborator Names]: Contributions welcome for analysis, dashboards, and other enhancements!
