@@ -20,17 +20,22 @@ import pandas as pd
 
 # %% tags=["parameters"]
 upstream = None
-product = None
+product = {
+    'officers': '../products/officers_processed.csv',
+    'complaints': '../products/complaints_processed.csv',
+    'allegations': '../products/allegations_processed.csv',
+    'penalties': '../products/penalties_processed.csv'
+}
 
 # %% [markdown]
 # ## Load the Data from CSV Files
 
 # %%
 # Load each CSV file into a pandas DataFrame
-officers_df = pd.read_csv('data/Civilian_Complaint_Review_Board__Police_Officers.csv')
-complaints_df = pd.read_csv('data/Civilian_Complaint_Review_Board__Complaints_Against_Police_Officers.csv')
-allegations_df = pd.read_csv('data/Civilian_Complaint_Review_Board__Allegations_Against_Police_Officers.csv')
-penalties_df = pd.read_csv('data/Civilian_Complaint_Review_Board__Penalties.csv')
+officers_df = pd.read_csv('../data/Civilian_Complaint_Review_Board__Police_Officers.csv')
+complaints_df = pd.read_csv('../data/Civilian_Complaint_Review_Board__Complaints_Against_Police_Officers.csv')
+allegations_df = pd.read_csv('../data/Civilian_Complaint_Review_Board__Allegations_Against_Police_Officers.csv')
+penalties_df = pd.read_csv('../data/Civilian_Complaint_Review_Board__Penalties.csv')
 
 # %%
 # Display the first few rows of each dataset
